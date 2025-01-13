@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-gray-800 bg-white dark:bg-dark-bg dark:text-dark-text transition-colors duration-200;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-secondary 
+         dark:bg-dark-primary dark:hover:bg-dark-secondary;
+}
+
+.btn-secondary {
+  @apply bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white 
+         dark:bg-dark-surface dark:border-dark-accent dark:text-dark-accent dark:hover:bg-dark-accent dark:hover:text-white;
+}
+
+.section {
+  @apply py-20 px-4 md:px-8 transition-colors duration-200;
+}
